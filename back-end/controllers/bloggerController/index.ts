@@ -1,2 +1,2 @@
-export * from "./createBloggerDetails";
-export * from "./updateBlogger"
+export * from "./updatedBlogger";
+export * from "./bloggerCreate";

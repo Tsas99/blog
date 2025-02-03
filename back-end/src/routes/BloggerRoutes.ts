@@ -1,9 +1,18 @@
 import express from "express";
-import {registerBlogger, updateBlogger} from "../../controllers/bloggerController"
+import {
+  registerBlogger,
+  updatedBlogger,
+
+
+} from "../../controllers/bloggerController";
+
 
 const router = express.Router();
 
-router.post("/bloggers/register", registerBlogger);
-router.put("/editBlogger/:id", updateBlogger)
+router.post("/register", registerBlogger);
+router.put("/editBlogger/:id", updatedBlogger);
+// router.get("/bloggerDetails/:id", getBloggerWithDetails);
+// router.get("/allBloggers", getAllBloggers);
+// router.post("/search", searchController);
 
 export default router;
